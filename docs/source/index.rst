@@ -1,12 +1,32 @@
 Welcome to Lumache's documentation!
 ===================================
 
+Versioning
+----------
+
 This is version #2
 
-Few intersphinx links 
-- sphinx : ref-role = :ref:`sphinx:ref-role`
-- : doc : sphinx:usage/extensions/intersphinx = :doc:`sphinx:usage/extensions/intersphinx`
+Intersphinx
+-----------
 
+Few intersphinx links 
+
+ - sphinx : referece = :ref:`sphinx:ref-role`
+ - : doc : sphinx:usage/extensions/intersphinx = :doc:`sphinx:usage/extensions/intersphinx`
+
+
+PlantUML
+--------
+
+.. uml::
+
+    @startuml
+    Alice -> Bob: Authentication Request
+    Bob --> Alice: Authentication Response
+
+    Alice -> Bob: Another authentication Request
+    Alice <-- Bob: Another authentication Response
+    @enduml
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
 that creates recipes mixing random ingredients.
