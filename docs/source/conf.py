@@ -67,8 +67,7 @@ if on_rtd:
     pass
 #    plantuml = 'java -Djava.awt.headless=true -jar plantuml.jar'
 else:
-    pass
-#    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
+    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
 plantuml_output_format = 'svg'
 
