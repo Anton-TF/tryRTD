@@ -70,7 +70,7 @@ intersphinx_disabled_domains = ['std']
 #else:
 #    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
-    plantuml_output_format = 'svg'
+# plantuml_output_format = 'svg'
 
 #Make auso section labals generated be prefixed with file name.
 #autosectionlabel_prefix_document=True
