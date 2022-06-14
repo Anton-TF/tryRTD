@@ -45,7 +45,7 @@ except:
 extensions = [
 #    'sphinx.ext.duration',
 #    'sphinx.ext.doctest',
-    'm2r2', #Support markdown files. Needed for external code.
+#    'm2r2', #Support markdown files. Needed for external code.
     'sphinx.ext.autosectionlabel', #Make sphinx generate a label for each section
     'sphinxcontrib.plantuml', #Add support for PlantUML drawings
 #    'sphinxcontrib.rsvgconverter', #Add support for SVG to PDF
