@@ -68,7 +68,7 @@ if on_rtd:
 else:
     plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
-#    plantuml_output_format = 'png'
+    plantuml_output_format = 'png'
 
 #Make auso section labals generated be prefixed with file name.
 #autosectionlabel_prefix_document=True
@@ -91,7 +91,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
