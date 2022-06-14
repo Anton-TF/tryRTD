@@ -7,7 +7,7 @@ import sys
 import re
 from subprocess import check_output
 
-sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
@@ -62,15 +62,15 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 # PlantUML
-on_rtd = os.environ.get('READTHEDOCS') == 'True'
-if on_rtd:
-    pass
+#on_rtd = os.environ.get('READTHEDOCS') == 'True'
+#if on_rtd:
+#    pass
 #    plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
 #    plantuml = 'java -Djava.awt.headless=true -jar plantuml.jar'
-else:
-    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
+#else:
+#    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
-    plantuml_output_format = 'png'
+    plantuml_output_format = 'svg'
 
 #Make auso section labals generated be prefixed with file name.
 #autosectionlabel_prefix_document=True
