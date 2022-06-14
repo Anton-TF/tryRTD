@@ -64,6 +64,7 @@ intersphinx_disabled_domains = ['std']
 # PlantUML
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 if on_rtd:
+    pass
 #    plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
 #    plantuml = 'java -Djava.awt.headless=true -jar plantuml.jar'
 else:
