@@ -62,8 +62,13 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 # PlantUML
-# plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
-plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
+if on_rtd:
+    plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+else:
+    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
+
+#    plantuml_output_format = 'png'
 
 #Make auso section labals generated be prefixed with file name.
 #autosectionlabel_prefix_document=True
