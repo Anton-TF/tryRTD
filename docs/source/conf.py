@@ -91,6 +91,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
+# Changed from None to en
 language = 'en'
 
 # List of patterns, relative to source directory, that match files and
