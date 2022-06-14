@@ -45,7 +45,7 @@ except:
 extensions = [
 #    'sphinx.ext.duration',
 #    'sphinx.ext.doctest',
-#    'm2r2', #Support markdown files. Needed for external code.
+    'm2r2', #Support markdown files. Needed for external code.
     'sphinx.ext.autosectionlabel', #Make sphinx generate a label for each section
     'sphinxcontrib.plantuml', #Add support for PlantUML drawings
 #    'sphinxcontrib.rsvgconverter', #Add support for SVG to PDF
@@ -64,7 +64,8 @@ intersphinx_disabled_domains = ['std']
 # PlantUML
 on_rtd = os.environ.get('READTHEDOCS') == 'True'
 if on_rtd:
-    plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+#    plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+    plantuml = 'java -Djava.awt.headless=true -jar plantuml.jar'
 else:
     plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
@@ -92,7 +93,7 @@ master_doc = 'index'
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
 # Changed from None to en
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
