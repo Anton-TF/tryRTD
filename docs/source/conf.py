@@ -62,12 +62,12 @@ intersphinx_mapping = {
 intersphinx_disabled_domains = ['std']
 
 # PlantUML
-#on_rtd = os.environ.get('READTHEDOCS') == 'True'
-#if on_rtd:
-#    pass
-plantuml = 'java -Djava.awt.headless=true -jar /usr/share/plantuml/plantuml.jar'
+on_rtd = os.environ.get('READTHEDOCS') == 'True'
+if on_rtd:
+    pass
 #    plantuml = 'java -Djava.awt.headless=true -jar plantuml.jar'
-#else:
+else:
+    pass
 #    plantuml = 'java -jar ' + os.environ['PLANTUML_JAR_PATH']
 
 plantuml_output_format = 'svg'
