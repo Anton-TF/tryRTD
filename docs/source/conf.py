@@ -51,7 +51,7 @@ extensions = [
 #    'm2r2', #Support markdown files. Needed for external code.
     'sphinx.ext.autosectionlabel', #Make sphinx generate a label for each section
     'sphinxcontrib.plantuml', #Add support for PlantUML drawings
-    'sphinxcontrib.rsvgconverter', #Add support for SVG to PDF
+#    'sphinxcontrib.rsvgconverter', #Add support for SVG to PDF
     'sphinx.ext.intersphinx', #Links to over projects
 ]
 
