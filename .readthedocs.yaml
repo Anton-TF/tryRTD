@@ -20,12 +20,16 @@ build:
     - plantuml
     - doxygen
     - graphviz
+    - cmake
   jobs:
     pre_build:
+      - pwd
+      - ls
+      - cmake --version
       - doxygen docs/doxygen/Doxyfile
     post_build:
       - mkdir -p $READTHEDOCS_OUTPUT/html/doxygen
-      - cp -a build/doxygen/html/. $READTHEDOCS_OUTPUT/html/doxygen/
+      - cp -a doxygen/html/. $READTHEDOCS_OUTPUT/html/doxygen/
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
@@ -33,9 +37,7 @@ sphinx:
 
 # The documentation will also be built in a pdf format
 formats:
-   - pdf
    - htmlzip
-
 
 # Configuration of the Python environment
 python:
@@ -44,3 +46,4 @@ python:
          path: .
          extra_requirements:
              - docs
+       - requirements: docs/requirements.txt
