@@ -25,4 +25,4 @@ Contents
 .. toctree::
 
    usage
-   api_reference
+   doxygen/api_reference
