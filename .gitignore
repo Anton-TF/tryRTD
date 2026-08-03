@@ -9,7 +9,10 @@ env/
 venv/
 ENV/
 
-/html/
-/latex/
+.vscode/
+html/
+latex/
 Doxyfile
+/doxygen/
 reference_manual
+build*
